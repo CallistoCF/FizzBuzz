@@ -1,8 +1,13 @@
 $(document).ready(function(){
   console.log("Ready!");
-  var a = 1;
+  var b = prompt("Please Enter a Number");
+  counter(parseInt(b));
+  
+});
 
-  while (a < 101){
+function counter(upto){
+    var a = 0;
+    while (a < upto){
     if (a % 3 == 0 && a % 5 != 0){
       $("p").append("Fizz" + "<br>");
     }
@@ -17,4 +22,4 @@ $(document).ready(function(){
     }
     a++;
   }
-});
+}
